@@ -10,6 +10,7 @@ import BashScript from '../images/programing/BashScript.png'
 import Racket from '../images/programing/Racket.png'
 
 // Database
+import MySQL from '../images/programing/MySQL.png'
 import MongoDB from '../images/programing/MongoDB.png'
 import PostgresSQL from '../images/programing/PostgresSQL.png'
 import SQLite from '../images/programing/SQLite.png'
@@ -19,6 +20,7 @@ import jQuery from '../images/programing/jQuery.png'
 import React from '../images/programing/React.png'
 import Node from '../images/programing/Node.png'
 import Express from '../images/programing/Express.png'
+import SmartClient from '../images/programing/SmartClient.png'
 import SFML from '../images/programing/SFML.png'
 import Mockito from '../images/programing/Mockito.png'
 
@@ -100,7 +102,12 @@ var skills = {
         ],
     }, {
         type: "Databases",
-        list: [{
+        list: [
+            {
+                name: 'MySQL',
+                icon: MySQL
+            },
+            {
                 name: 'MongoDB',
                 icon: MongoDB
             },
@@ -130,6 +137,10 @@ var skills = {
             {
                 name: 'Express',
                 icon: Express
+            },
+            {
+                name: 'SmartClient',
+                icon: SmartClient
             },
             {
                 name: 'SFML/CSFML',
@@ -214,6 +225,7 @@ var projects = {
             project: "Timber Man",
             link: "https://github.com/oplS17projects/Timberman",
             img: TimberMan,
+            header: "Window & Mac",
             description: [
                 "Developed a responsive game from scratch using procedural language Racket.",
                 "Used SQLite as local database and Postgres on Heroku."
@@ -223,6 +235,7 @@ var projects = {
             project: "Music Mash",
             link: "https://github.com/leangseu/AndroidMusicMash",
             img: MusicMash,
+            header: "Android Application",
             description: [
                 "The application allows users to play music from YouTube and Napster API services."
             ]
@@ -231,15 +244,17 @@ var projects = {
             project: "AutomaText",
             link: "https://github.com/leangseu/AndroidAutomaText",
             img: AutomaText,
+            header: "Android Application",
             description: [
                 "Allow users to schedule a text message to send at specific time and date.",
                 "Used SQLite as local database and Postgres on the backend."
             ]
         },
         {
-            project: "Messenger Translator asdf",
+            project: "Messenger Translator",
             link: "https://www.facebook.com/mTranslator/",
             img: Messenger,
+            header: "Facebook Messenger",
             description: [
                 "Using express and google translate API to create a responsive bot on Facebook."
             ]

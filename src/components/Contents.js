@@ -94,7 +94,7 @@ export default class Contents extends Component {
                         <div className="d-flex flex-wrap justify-content-around">
                             {projects.data.map(proj => {
                                 // create projects cards
-                                const {project, link, img, description} = proj
+                                const {project, link, img, header, description} = proj
                                 
                                 return (
                                     <Popover
@@ -107,11 +107,13 @@ export default class Contents extends Component {
                                             }}
                                             body={[
                                                 <div key={project} className="d-flex flex-column bg-light display-card">
+                                                    <h5 className="header">{header}</h5>
                                                     <ul className="m-auto">
                                                         {description.map(item => {
                                                             return <li key={item}>{item}</li>
                                                         })}
                                                     </ul>
+                                                    <br/>
                                                     <a href={link} target="_blank" className="btn btn-outline-primary">Link</a>
                                                 </div>
                                             ]}

@@ -41,8 +41,8 @@ var about = {
     phone: "9782595390",
     email: "kimleangseu@gmail.com",
     about: "Undergraduate student at University of Massachusetts Lowell",
-    interest: "Web development front-end and back-end, mobile application development, game development, artificial intelligence and data science",
-    hobby: "Hiking, swimming and gaming (League of Legend)",
+    interest: "Full stack web development, mobile application development, artificial intelligence, data science and game development",
+    hobby: "Hiking, swimming, running, traveling and gaming (League of Legend)",
     links: [
         {
             site: "Linkedin",

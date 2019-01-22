@@ -38,7 +38,7 @@ export default class Contents extends Component {
                         <br/>
                         <p>{about.about}</p>
                         <p>Area of Interest: {about.interest}</p>
-                        <p>Hobby: {about.hobby}</p>
+                        {/* <p>Hobby: {about.hobby}</p> */}
                         <br/>
                         <div className="d-flex justify-content-start social">
                             {about.links.map(link => {

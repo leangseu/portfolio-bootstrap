@@ -175,9 +175,9 @@ var experiences = {
             location: "Chelmsford, MA",
             date: "February 2018 - Present",
             responsibilities: [
-                "Work in a fast pace startup environment",
-                "Developer and design UI with SmartClient framework",
-                "Used MySQL as relational database for backend",
+                "Work in a fast paced startup environment",
+                "Work in a collaborative software engineering team",
+                "Utilize SmartClient framework to build a full stack web application",
                 "Awarded as the best employee in May 2018",
             ]
         },
@@ -187,9 +187,8 @@ var experiences = {
             location: "Lowell, MA",
             date: "MA June 2017 - August 2017",
             responsibilities: [
-                "Worked in a collaborative software engineering team",
                 "Developed an application on Titan to send signal using Java",
-                "Wrote automation using Bash Script and regular expression to import, export and recreate data from log",
+                "Wrote automation with Bash Script and used regular expression to import, export and recreate data from log",
                 "Quality assurance with Mockito"
             ]
         },

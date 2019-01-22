@@ -19,12 +19,11 @@ export default class Contents extends Component {
         // bad practice
         var divs = document.querySelectorAll("#contents>div");
         divs.forEach(div => {
-            div.classList.add("pre-side-in-right");
+            div.classList.add("pre-blur-in");
             new scrollmagic.Scene({triggerElement: "#" + div.id})
-                    .setClassToggle("#" + div.id, "slide-in-right")
+                    .setClassToggle("#" + div.id, "blur-in")
                     .addTo(this.controller);
         });
-        console.log(divs[0].id);
     }
 
     render() {

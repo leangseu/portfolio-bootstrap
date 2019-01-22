@@ -176,7 +176,7 @@ var experiences = {
             date: "February 2018 - Present",
             responsibilities: [
                 "Work in a fast paced startup environment",
-                "Work in a collaborative software engineering team",
+                "Collaborate closely with a small software engineering team",
                 "Utilize SmartClient framework to build a full stack web application",
                 "Awarded as the best employee in May 2018",
             ]

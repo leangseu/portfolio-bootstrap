@@ -23,7 +23,7 @@ h4 {
     color: #596269;
 }
 
-#contents > * {
+#contents>* {
     padding: 10px;
     min-height: 100vh;
     justify-content: center;
@@ -38,7 +38,7 @@ h4 {
     max-width: 300px;
 }
 
-#side-bar > a {
+#side-bar>a {
     width: 100%;
     border: 0;
 }
@@ -60,7 +60,8 @@ h4 {
     color: #343a40;
 }
 
-.btn-outline-light.focus, .btn-outline-light:focus {
+.btn-outline-light.focus,
+.btn-outline-light:focus {
     box-shadow: none;
 }
 
@@ -91,20 +92,20 @@ a:hover {
     font-family: 'Abril Fatface', sans-serif;
 }
 
-.contact-info > a{
+.contact-info>a {
     padding: 4px 12px;
 }
 
-.social > * {
+.social>* {
     margin: 0 10px;
     align-self: flex-end;
 }
 
-.flex-equal-size > *{
+.flex-equal-size>* {
     flex: 1;
 }
 
-.languages > *{
+.languages>* {
     margin: 4px;
 }
 
@@ -117,14 +118,14 @@ a:hover {
     width: 260px;
 }
 
-.project-card > h4 {
+.project-card>h4 {
     width: 260px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.project-card > img {
+.project-card>img {
     width: 200px;
     max-width: 200px;
     margin: 0;
@@ -136,4 +137,54 @@ a:hover {
     min-height: 30vh;
     border: 1px solid #dee2e6;
     border-radius: .25rem;
+}
+
+/* Animation */
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* before slide in */
+
+.pre-side-in-right {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+    transition: 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.slide-in-right {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }

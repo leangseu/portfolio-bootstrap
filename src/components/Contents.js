@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Popover from 'react-popover';
+import scrollmagic from 'scrollmagic';
 import { about, skills, educations, experiences, projects } from '../data/Data';
 
 export default class Contents extends Component {
@@ -10,10 +11,26 @@ export default class Contents extends Component {
             popover: {}
         }
     }
+
+    componentDidMount() {
+        // className="slide-in-right"
+        this.controller = new scrollmagic.Controller();
+
+        // bad practice
+        var divs = document.querySelectorAll("#contents>div");
+        divs.forEach(div => {
+            div.classList.add("pre-side-in-right");
+            new scrollmagic.Scene({triggerElement: "#" + div.id})
+                    .setClassToggle("#" + div.id, "slide-in-right")
+                    .addTo(this.controller);
+        });
+        console.log(divs[0].id);
+    }
+
     render() {
         return <div className="d-flex flex-column col bg-light" id="contents" data-spy="scroll" data-target="#side-bar" data-offset="0">
                     <div id="about">
-                        <h1 className="name">{about.name}</h1>
+                        <h1 className="name text-focus-in">{about.name}</h1>
                         <div className="d-flex justify-content-center flex-xl-row flex-column contact-info">
                             <a className="btn-outline-secondary" href={'callto:' + about.phone} title={"Call to " + about.phone}><i className="fas fa-phone"></i>  {about.phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1)-$2-$3")}</a>
                             <a className="btn-outline-secondary" target="_top" href={'mailto:'+about.email} title={"Email to " + about.phone}><i className="fas fa-envelope"></i>  {about.email}</a>
@@ -22,7 +39,7 @@ export default class Contents extends Component {
                         <br/>
                         <p>{about.about}</p>
                         <p>Area of Interest: {about.interest}</p>
-                        {/*<p>Hobby: {about.hobby}</p> */}
+                        <p>Hobby: {about.hobby}</p>
                         <br/>
                         <div className="d-flex justify-content-start social">
                             {about.links.map(link => {
@@ -33,7 +50,7 @@ export default class Contents extends Component {
                         </div>
                     </div>
                     <div id="skills">
-                        <h2 className="header">{skills.header}</h2>
+                        <h2 className="header slide-in-right">{skills.header}</h2>
                         {
                             skills.data.map(data => {
                                 let buffer = []

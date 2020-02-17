@@ -5,7 +5,7 @@ import CSS from '../images/programing/CSS.png'
 import C from '../images/programing/C.png'
 import Cpp from '../images/programing/C++.png'
 import Java from '../images/programing/Java.png'
-import Python from '../images/programing/Python.png'
+// import Python from '../images/programing/Python.png'
 import BashScript from '../images/programing/BashScript.png'
 import Racket from '../images/programing/Racket.png'
 
@@ -33,6 +33,10 @@ export default {
       icon: JavaScript
     },
     {
+      name: 'Java',
+      icon: Java
+    },
+    {
       name: 'HTML',
       icon: HTML
     },
@@ -48,14 +52,10 @@ export default {
       name: 'C++',
       icon: Cpp
     },
-    {
-      name: 'Java',
-      icon: Java
-    },
-    {
-      name: 'Python',
-      icon: Python
-    },
+    // {
+    //   name: 'Python',
+    //   icon: Python
+    // },
     {
       name: 'Bash Script',
       icon: BashScript

@@ -27,10 +27,10 @@ export default class Contents extends Component {
   render() {
     return <div className="d-flex flex-column col bg-light" id="contents" data-spy="scroll" data-target="#side-bar" data-offset="0">
       <About />
-      <Skills />
-      <Educations />
       <Experiences />
       <Projects />
+      <Skills />
+      <Educations />
     </div>
   }
 }

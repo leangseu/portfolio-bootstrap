@@ -7,7 +7,7 @@ export default () => <div id="skills">
 {
     Skills.data.map(data => {
         let buffer = []
-        buffer.push(<h4 key={data.type}>{data.type}</h4>)
+        buffer.push(<h5 key={data.type}>{data.type}</h5>)
         buffer.push(<div key='languages' className='languages'>{
             data.list.map(language => {
             return <img key={language.name} src={language.icon} title={language.name} alt={language.name}/>

@@ -13,9 +13,9 @@ export default () => <div id="educations">
               <span >{degree}</span>
               <span >{graduated}</span>
             </p>)
-            buffer.push(<p key={major}>Major :{major}</p>)
-            buffer.push(<p key={minor}>Minor: {minor}</p>)
-            buffer.push(<p key={gpa}>GPA: {gpa}</p>)
+            buffer.push(<p key={major}>Major: <b>{major}</b></p>)
+            buffer.push(<p key={minor}>Minor: <b>{minor}</b></p>)
+            // buffer.push(<p key={gpa}>GPA: {gpa}</p>)
             return buffer
           })
         }

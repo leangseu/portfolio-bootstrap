@@ -2,8 +2,8 @@ export default {
   header: "WORK EXPERIENCES",
   data: [
     {
-      company: "Global Q Inc.,",
-      title: "Software Developer",
+      company: "Global QMS Inc.,",
+      title: "Full Stack Developer",
       location: "Chelmsford, MA",
       date: "February 2018 - Present",
       responsibilities: [
@@ -17,7 +17,7 @@ export default {
       company: "NetNumber Inc.,",
       title: "Intern",
       location: "Lowell, MA",
-      date: "MA June 2017 - August 2017",
+      date: "June 2017 - August 2017",
       responsibilities: [
         "Developed an application on Titan to send signal using Java",
         "Wrote automation with Bash Script and used regular expression to import, export and recreate data from log",

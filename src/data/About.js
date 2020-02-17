@@ -8,7 +8,7 @@ export default {
   addressURL: "https://goo.gl/maps/qF5Cv549Wd32",
   phone: "9782595390",
   email: "kimleangseu@gmail.com",
-  about: "Undergraduate student at University of Massachusetts Lowell",
+  about: "Full Stack Developer at Global QMS Inc.,",
   interest: "Full stack web development, mobile application development, artificial intelligence, data science and game development",
   hobby: "Hiking, swimming, running, traveling and gaming (League of Legend)",
   links: [

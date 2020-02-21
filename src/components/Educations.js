@@ -7,7 +7,7 @@ export default () => <div id="educations">
         {
           Educations.data.map(edu => {
             let buffer = [];
-            const { school, degree, graduated, major, minor, gpa } = edu;
+            const { school, degree, graduated, major, minor } = edu;
             buffer.push(<h4 key={school}>{school}</h4>)
             buffer.push(<p key={degree} className="d-flex flex-lg-row flex-column justify-content-between">
               <span >{degree}</span>

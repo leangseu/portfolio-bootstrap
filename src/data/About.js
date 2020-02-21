@@ -9,6 +9,7 @@ export default {
   phone: "9782595390",
   email: "kimleangseu@gmail.com",
   about: "Full Stack Developer at Global QMS Inc.,",
+  additionalInfo: ["US Citizen"],
   interest: "Full stack web development, mobile application development, artificial intelligence, data science and game development",
   hobby: "Hiking, swimming, running, traveling and gaming (League of Legend)",
   links: [

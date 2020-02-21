@@ -6,6 +6,6 @@ export default {
     graduated: "May 2018",
     major: "Computer Science",
     minor: "Math Minor",
-    gpa: 3.4
+    // gpa: 3.4
   }]
 }

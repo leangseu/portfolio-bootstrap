@@ -8,13 +8,23 @@ export default {
   header: "PROJECTS",
   data: [
     {
+      project: "Messenger Translator",
+      link: "https://www.facebook.com/mTranslator/",
+      img: Messenger,
+      header: "Facebook Messenger",
+      description: [
+        "A facebook messenger bot that translate message to English",
+        "Built with ExpressJs, google translate API, FacebookSDK"
+      ]
+    },
+    {
       project: "Timber Man",
       link: "https://github.com/oplS17projects/Timberman",
       img: TimberMan,
       header: "Window & Mac",
       description: [
-        "Developed a responsive game from scratch using procedural language Racket.",
-        "Used SQLite as local database and Postgres on Heroku."
+        "Developed a responsive game using procedural language Racket",
+        "Built with Racket, SQLite, Postgres, Heroku"
       ]
     },
     {
@@ -23,7 +33,8 @@ export default {
       img: MusicMash,
       header: "Android Application",
       description: [
-        "The application allows users to play music from YouTube and Napster API services."
+        "The application allows users to play music from YouTube and Napster API services",
+        "Built with Android SDK, YouTube API, Napster API"
       ]
     },
     {
@@ -32,17 +43,8 @@ export default {
       img: AutomaText,
       header: "Android Application",
       description: [
-        "Allow users to schedule a text message to send at specific time and date.",
-        "Used SQLite as local database and Postgres on the backend."
-      ]
-    },
-    {
-      project: "Messenger Translator",
-      link: "https://www.facebook.com/mTranslator/",
-      img: Messenger,
-      header: "Facebook Messenger",
-      description: [
-        "Using express and google translate API to create a responsive bot on Facebook."
+        "Allow users to schedule a text message to send at a specific time and date",
+        "Built with Android Studio, SQLite, Postgres, Twilio, Python"
       ]
     }
   ]

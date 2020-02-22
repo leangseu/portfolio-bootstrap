@@ -7,10 +7,14 @@ export default {
       location: "Chelmsford, MA",
       date: "February 2018 - Present",
       responsibilities: [
-        "Work in a fast paced startup environment",
-        "Collaborate closely with a small software engineering team",
-        "Utilize SmartClient framework to build a full stack web application",
-        "Awarded as the best employee in May 2018",
+        "Designed and developed ORM(Object Relational Mapping) for EAV(Entity Attribute Value) data model",
+        "Built backend data migration connector for the customers",
+        "Built frontend wrapper for GoJS, Ace Editor on Smartclient framework",
+        "Collaboratively working with the software engineering team and the sales team"
+        // "Awarded as the best employee in May 2018",
+        // "Work in a fast paced startup environment",
+        // "Collaborate closely with a small software engineering team",
+        // "Utilize SmartClient framework to build a full stack web application",
       ]
     },
     {
@@ -19,9 +23,9 @@ export default {
       location: "Lowell, MA",
       date: "June 2017 - August 2017",
       responsibilities: [
-        "Developed an application on Titan to send signal using Java",
-        "Wrote automation with Bash Script and used regular expression to import, export and recreate data from log",
-        "Quality assurance with Mockito"
+        "Developed an application on the Titan platform to send signal",
+        "Wrote automation for import, export and recreate data from log",
+        // "Quality assurance with Mockito"
       ]
     },
     // {

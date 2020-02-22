@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-// import scrollmagic from 'scrollmagic';
-// import { about, skills, educations, experiences, projects } from '../data/Data';
+import scrollmagic from 'scrollmagic';
 
 import About from './About.js';
 import Skills from './Skills.js';
@@ -11,17 +10,16 @@ import Projects from './Projects.js';
 
 export default class Contents extends Component {
   componentDidMount() {
-    // className="slide-in-right"
-    // this.controller = new scrollmagic.Controller();
+    this.controller = new scrollmagic.Controller();
 
-    // // bad practice
-    // var divs = document.querySelectorAll("#contents>div");
-    // divs.forEach(div => {
-    //     div.classList.add("pre-blur-in");
-    //     new scrollmagic.Scene({triggerElement: "#" + div.id})
-    //             .setClassToggle("#" + div.id, "blur-in")
-    //             .addTo(this.controller);
-    // });
+    // bad practice
+    var divs = document.querySelectorAll("#contents>div");
+    divs.forEach(div => {
+        div.classList.add("pre-blur-in");
+        new scrollmagic.Scene({triggerElement: "#" + div.id})
+                .setClassToggle("#" + div.id, "blur-in")
+                .addTo(this.controller);
+    });
   }
 
   render() {

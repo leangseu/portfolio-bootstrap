@@ -4,7 +4,7 @@ import { About } from '../data/index.js';
 
 export default () => <div id="about">
   <h1 className="name">{About.name}</h1>
-  <div className="d-flex align-items-center justify-content-center flex-xl-row flex-column contact-info">
+  <div className="d-flex align-items-center justify-content-center flex-column contact-info">
     <p className="text-center"><b>{About.about}</b></p>
     {
       About.additionalInfo.map(info => <p className="text-center">{info}</p>)
